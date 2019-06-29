@@ -28,12 +28,12 @@
  * represents the switch matrix.
  */
 #define LAYOUT( \
-    L00, L01,  \
-	L10, L11  \
+    L00, L01, R01,  \
+	L10, L11, R11 \
 ) \
 { \
-    { L00, L01}, \
-	{L10, L11 } \
+    { L00, L01, R01}, \
+	{L10, L11, R11 } \
 }
 
 #define IO_ADDR 0b0100000
